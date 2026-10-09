@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lava Dodger</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #b9a6f7; /* zelfde als de Spline-achtergrond */
+      }
+      /* De runtime hangt de game-HTML (HUD, menu) over de canvas heen,
+         in de parent van de canvas: die moet dus het hele scherm vullen. */
+      #stage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      #stage canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-C9wXtOKe.js"></script>
+  </head>
+  <body>
+    <div id="stage"><canvas id="canvas3d"></canvas></div>
+  </body>
+</html>
